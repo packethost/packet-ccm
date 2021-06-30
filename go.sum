@@ -322,8 +322,8 @@ github.com/onsi/gomega v1.7.0/go.mod h1:ex+gbHU/CVuBBDIJjb2X0qEXbFg53c61hWP/1Cpa
 github.com/packethost/packet-api-server v0.0.0-20200706140707-f0f79ef89944 h1:JfXrldQ9t47ZBoAtKBh/9ARDW+W5FwPi5abHERBoMeU=
 github.com/packethost/packet-api-server v0.0.0-20200706140707-f0f79ef89944/go.mod h1:20y0oYV+wNTv4CnBEi30PiiSGOoDFtsk25g1Rs3w7kU=
 github.com/packethost/packngo v0.2.1-0.20200629161839-1810e48469b4/go.mod h1:erURcsqYzwc9wSb04TX4so+s6F3uZtbXUil0W1LCGHA=
-github.com/packethost/packngo v0.5.1 h1:y+jWcMnyArP3hVZRsBkAXTLhokuqdYg6JUmkshX2SMk=
-github.com/packethost/packngo v0.5.1/go.mod h1:aRxUEV1TprXVcWr35v8tNYgZMjv7FHaInXx224vF2fc=
+github.com/packethost/packngo v0.16.0 h1:s1ikmTSVu0ET81L9dZdch4QBvv/4IbU90rayR5cdvwE=
+github.com/packethost/packngo v0.16.0/go.mod h1:YrtUNN9IRjjqN6zK+cy2IYoi3EjHfoWTWxJkI1I1Vk0=
 github.com/pallinder/go-randomdata v1.2.0 h1:EJPxw+sgM1mbMW8RBu5zkG4FbloJpDOCCqPccdWto8A=
 github.com/pallinder/go-randomdata v1.2.0/go.mod h1:p8CasZQiWDLuaKy5ihVvdshqc7LlL6ovmRxAuNXgi3U=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=

@@ -144,8 +144,8 @@ func TestRoutes(t *testing.T) {
 func TestProviderName(t *testing.T) {
 	vc, _ := testGetValidCloud(t)
 	name := vc.ProviderName()
-	if name != providerName {
-		t.Errorf("returned %s instead of expected %s", name, providerName)
+	if name != ProviderName {
+		t.Errorf("returned %s instead of expected %s", name, ProviderName)
 	}
 }
 
@@ -161,20 +161,13 @@ func TestHasClusterID(t *testing.T) {
 
 // builds an Equinix Metal client
 func constructClient(authToken string, baseURL *string) *packngo.Client {
-	/*
-		tr := &http.Transport{
-			MaxIdleConns:       10,
-			IdleConnTimeout:    30 * time.Second,
-			DisableCompression: true,
-		}
-	*/
 	client := retryablehttp.NewClient()
 
 	// client.Transport = logging.NewTransport("EquinixMetal", client.Transport)
 	if baseURL != nil {
 		// really should handle error, but packngo does not distinguish now or handle errors, so ignoring for now
-		client, _ := packngo.NewClientWithBaseURL(ConsumerToken, authToken, client, *baseURL)
+		client, _ := packngo.NewClientWithBaseURL(ConsumerToken, authToken, client.StandardClient(), *baseURL)
 		return client
 	}
-	return packngo.NewClientWithAuth(ConsumerToken, authToken, client)
+	return packngo.NewClientWithAuth(ConsumerToken, authToken, client.StandardClient())
 }
